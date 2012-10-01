@@ -1,0 +1,2 @@
+An application developed in C# for the windows desktop, CSharpControllerConfig is an application to update the IP settings of the I-Net controller. 
+It was designed to replace the existing controller configurator application, using ssh and sftp as opposed to ftp, and adding a reboot button.
