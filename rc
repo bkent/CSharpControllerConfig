@@ -1,0 +1,12 @@
+hostname CS1070
+hwclock -s
+mount -t proc proc /proc
+mount -o remount,rw /dev/root /
+mount /sys
+ifconfig lo 127.0.0.1
+ifconfig eth0 10.0.1.230 netmask 255.255.255.0
+route add default gw 10.0.1.1
+#dhcpcd eth0 &
+route add -net 127.0.0.0 netmask 255.255.255.0 lo
+/disk/bin/ems &
+cat /etc/motd
